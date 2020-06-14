@@ -6,6 +6,13 @@ from django.views import View
 class Deshboard(View):
     def get(self, request):
         try:
-            return render(request, 'restaurant/deshboard.html')
+            return render(request, 'restaurant/payment.html')
+        except Exception as error:
+            pass
+
+class Order(View):
+    def post(self, request):
+        try:
+            return render(request, 'restaurant/ongoing_payment.html')
         except Exception as error:
             pass
