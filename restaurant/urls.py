@@ -6,4 +6,5 @@ urlpatterns = [
 
     path('',views.Deshboard.as_view(), name='Deshboard'),
     path('payment/', views.Order.as_view(), name='order'),
+    path('handlerequest/', views.handlerequest, name='handlerequest'),
 ]
